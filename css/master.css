@@ -1,0 +1,226 @@
+/* Start Global Variables */
+
+:root{
+    --v-d-Magenta: hsl(300, 43%, 22%);
+    --Pink: hsl(333, 80%, 67%);
+    --d-g-Magenta: hsl(303, 10%, 53%);
+    --l-g-Magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+/* End Global Variables */
+
+/* Start Global Rules */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.container{
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px ) {
+    .container{
+        width: 750px;
+    }
+    
+}
+
+@media (min-width: 992px ) {
+    .container{
+        width: 970px;
+    }
+    
+}
+
+@media (min-width: 1200px ) {
+    .container{
+        width: 1170px;
+    }
+    
+}
+
+/* End Global Rules */
+
+/* Start 1st Section */
+
+.container .text{
+    text-align: center;
+} 
+
+.container .text h1{
+    color: var(--v-d-Magenta);
+    font-weight: 700;
+}
+
+.container .text p{
+    color: var(--v-d-Magenta);
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 1.6;
+}
+
+.container .rating{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.container .rating .card{
+    background-color: var(--l-g-Magenta);
+    border-radius: 10px;
+    padding: 1px 0 15px;
+    margin: 15px 0;
+
+}
+
+.container .rating .card ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.container .rating .card ul li{
+    padding-left: 5px;
+    padding-right: 5px;    
+}
+
+.container .rating .card span{
+    color: var(--v-d-Magenta);
+    font-weight: 700;
+}
+
+
+@media (min-width: 768px){
+    .section1{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .text{
+        flex-basis: 40%;
+        text-align: left !important;
+    }
+
+    .rating{
+        flex: 1;
+        margin: 0 !important;
+    }
+
+    .rating .card{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 15px !important;
+        width: 370px;
+    }
+
+    .rating .card:first-child{
+        width: calc(80% + 30px) !important;
+    }
+
+    .rating .card:nth-child(2){
+        margin-left: 30px;
+        width: calc(80% + 30px) !important;
+    }
+
+    .rating .card:last-child{
+        margin-left: 60px;
+        width: calc(80% + 30px) !important;
+
+    }
+
+    .quote{
+        display: flex;
+        margin: 0 !important;
+    }
+
+    .box{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .quote .box:first-child{
+        height: calc(80% + 30px) !important;
+
+    }
+
+    .quote .box:nth-child(2){
+        margin-top: 40px !important;
+        height: calc(80% + 30px) !important;
+    }
+
+    .quote .box:last-child{
+        margin-top: 60px !important;
+        height: calc(80% + 30px) !important;
+    }
+}   
+
+/* End 1st Section*/
+
+
+/* Start 2nd Section */
+
+.quote{
+    margin-top: 40px;
+}
+
+.container .quote .box{
+    background-color: var(--v-d-Magenta);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.container .quote .box .content{
+    padding: 40px;
+}
+
+.container .quote .box .personal-info{
+    display: flex;
+    align-items: center;
+}
+
+.container .quote .box .personal-info img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.container .quote .box .personal-info span{
+    margin-left: 20px;
+}
+
+.container .quote .box .personal-info span h4{
+    margin: 0;
+}
+
+.container .quote .box .personal-info h4:first-child{
+    color: var(--white);
+}
+
+.container .quote .box h4:last-child{
+    color: var(--Pink);
+    font-weight: 400;
+}
+
+.container .quote .box .content p{
+    color: var(--l-g-Magenta);
+    padding-top: 20px;
+    line-height: 1.7;
+    font-size: 12px;
+}
+
+/* End 2nd Section */
+
+
+footer{
+    padding-top: 40px;
+}
